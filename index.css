@@ -1,0 +1,46 @@
+.mobile {
+  border: 1px solid #cccccc;
+  height: 600px;
+  display: flex;
+}
+.mobile dl {
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+}
+.mobile dl dt {
+  background: #cccccc;
+  border: 1px solid #f3f3f3;
+  text-align: center;
+  height: 30px;
+  line-height: 2em;
+}
+.mobile dl dd {
+  display: flex;
+  flex-direction: column;
+}
+.mobile dl dd a {
+  text-align: center;
+  padding: 6px;
+  border: 1px solid #f3f3f3;
+}
+.topMenu,
+.subMenu {
+  position: relative;
+}
+.topMenu .top,
+.subMenu .top,
+.topMenu .sub,
+.subMenu .sub {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  display: none;
+}
+.topMenu:hover .top,
+.subMenu:hover .sub {
+  display: block;
+}
